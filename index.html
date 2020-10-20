@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="BR-PT">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Calculadora Online</title>
+    <script src="./js/script_onkeypress.js"></script>
+    <link
+      rel="shortcut icon"
+      href="./assets/calculator-icon.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body onKeyPress="keyPress()">
+    <main>
+      <article id="visor"><span id="valor_no_visor"></span></article>
+
+      <section class="mt-1">
+        <button onclick="m()" class="btn_efect btn_style2 btn">m</button>
+        <button onclick="mMais()" class="btn_efect btn_style2 btn">m+</button>
+        <button onclick="mMenos()" class="btn_efect btn_style2 btn">m-</button>
+        <button onclick="calc('/')" class="btn_efect btn_style2 btn">/</button>
+      </section>
+      <section class="mt-2">
+        <button onclick="editar_visor(7)" class="btn_efect btn_style btn2">
+          7
+        </button>
+        <button onclick="editar_visor(8)" class="btn_efect btn_style btn2">
+          8
+        </button>
+        <button onclick="editar_visor(9)" class="btn_efect btn_style btn2">
+          9
+        </button>
+        <button onclick="calc('*')" class="btn_efect btn_style2 btn">*</button>
+      </section>
+      <section class="mt-2">
+        <button onclick="editar_visor(4)" class="btn_efect btn_style btn2">
+          4
+        </button>
+        <button onclick="editar_visor(5)" class="btn_efect btn_style btn2">
+          5
+        </button>
+        <button onclick="editar_visor(6)" class="btn_efect btn_style btn2">
+          6
+        </button>
+        <button onclick="calc('-')" class="btn_efect btn_style2 btn">-</button>
+      </section>
+      <section class="mt-2">
+        <button onclick="editar_visor(1)" class="btn_efect btn_style btn2">
+          1
+        </button>
+        <button onclick="editar_visor(2)" class="btn_efect btn_style btn2">
+          2
+        </button>
+        <button onclick="editar_visor(3)" class="btn_efect btn_style btn2">
+          3
+        </button>
+        <button onclick="calc('+')" class="btn_efect btn_style2 btn">+</button>
+      </section>
+      <section class="mt-2">
+        <button onclick="editar_visor(0)" class="btn_efect btn_style2 btn2">
+          0
+        </button>
+        <button onclick="ponto()" class="btn_efect btn_style2 btn">.</button>
+        <button onclick="igual()" class="btn_efect btn_style2 btn">=</button>
+        <button onclick="apagar()" class="btn_efect btn_style2 btn">C</button>
+      </section>
+    </main>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
